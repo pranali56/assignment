@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+class RetunNumber
+{
+	public static void main(String args[])throws Exception
+	{
+		BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
+		String string1=b.readLine();
+		String str1=" ",s1=" ";
+		String []str2=new String[50];
+		String []s3=new String[50];
+		if(string.indexOf(".")<string.indexOf("?"))
+		{
+			str1 = string1.substring(0, string1.indexOf("."));
+			s1=strin1g.substring((string1.indexOf(".")+1),string1.indexOf("?"));
+			str2=str1.split(" ");
+			s3=1.split(" ");
+			
+		}
+		else if(string1.indexOf(".")>string1.indexOf("?"))
+		{
+			str1 = string1.substring(0, string1.indexOf("?"));
+			s3=string1.substring((string1.indexOf("?")+1),string1.indexOf("."));
+			str2=str1.split(" ");
+			s3=s1.split(" ");
+		}
+		if(str2.length>s1.length)
+		{
+			System.out.println(str2.length);
+		}
+		else
+		{
+			System.out.println(s1.length);
+		}
+		
+		
+	}
+}
